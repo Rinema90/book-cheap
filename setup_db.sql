@@ -20,7 +20,8 @@ CREATE TABLE books (
     author VARCHAR(255) NOT NULL,
     published_date DATE,
     price NUMERIC(10, 2),
-    stock INTEGER
+    stock INTEGER,
+    pisture VARCHAR(255) 
 );
 
 CREATE TABLE orders (
