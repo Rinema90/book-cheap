@@ -21,7 +21,7 @@ CREATE TABLE books (
     published_date DATE,
     price NUMERIC(10, 2),
     stock INTEGER,
-    pisture VARCHAR(255) 
+    picture VARCHAR(255) 
 );
 
 CREATE TABLE orders (
