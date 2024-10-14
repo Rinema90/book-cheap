@@ -31,7 +31,7 @@ const booksRouter = require("./routes/books");
 const ordersRouter = require("./routes/orders");
 
 // Use of the routes
-app.use("/users", usersRouter); // assigning users routes /users
+app.use("/users", usersRouter); // assigning users routes to /users : if someone asks for the users at http://localhost:8080/users, the code of users.js will be executed.
 app.use("/books", booksRouter);
 app.use("/orders", ordersRouter);
 
