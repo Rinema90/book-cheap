@@ -3,9 +3,13 @@
 const express = require("express"); //Express to determine endpoints
 const pool = require("./db"); // pool import from db.js
 require("dotenv").config();
+const cors = require("cors");
 
 const app = express();
 const port = 8080;
+
+// Middleware pour permettre au backend sur un port d'autoriser la communication avec le front-end sur un autre port
+app.use(cors());
 
 // Middleware pour parser les requêtes http (JSON) pour être comprises par le serveur Node
 app.use(express.json());
